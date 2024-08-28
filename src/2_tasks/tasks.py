@@ -15,7 +15,7 @@ async def main_with_tasks(n_times:int):
     for i in range(n_times):
         task = asyncio.create_task(coroutine())
     
-    await task
+    await task #waiting only for last task
     
 
 if __name__ == "__main__":
